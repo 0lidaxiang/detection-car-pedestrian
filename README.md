@@ -2,22 +2,28 @@
 
 ## Detectect the cat kinds and others
 识别猫的代码使用了自带的model去识别,效果还不错.
+
 The result show:
-![Detectect the cat kinds](../images/detectect-the-cat.png)
+![Detectect the cat kinds](./images/detectect-the-cat.png)
 
 ## Detectect the MNIST handwritten digit database
 手写数字的图片识别.
+
 [This database link](http://yann.lecun.com/exdb/mnist/)
+
 The result show:
-![Detectect the MNIST handwritten digit](../images/detect-handwritten-digit.png)
+![Detectect the MNIST handwritten digit](./images/detect-handwritten-digit.png)
 
 ## Socket
-python-socket 部分是为了传输 tx2 里面的预测结果到另外一台电脑上所做的工作.基本是为了给下面一项 python-camera 所做的辅助工作.
+python-socket 部分是为了传输 tx2 里面的预测结果到另外一台电脑上所做的工作.  
+基本是为了给下面一项 python-camera 所做的辅助工作.
 
 ## python-camera
-使用 Python 调用已有模型去分类和识别
+使用 Python 调用已有模型去分类和识别.  
+[bvlc_googlenet.caffemodel 下载地址](http://dl.caffe.berkeleyvision.org/bvlc_googlenet.caffemodel)
+
 #### tegra-cam.py
-这里只是用Python调用打开 tx2 的板载摄像头或者外接的 USB 摄像头.
+这里只是用Python调用打开 tx2 的板载摄像头或者外接的 USB 摄像头.  
 外接USB摄像头明显反应速度和识别像素高太多.
 
 1. dump帮助信息：
